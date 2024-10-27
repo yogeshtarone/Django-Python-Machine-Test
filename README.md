@@ -9,5 +9,7 @@ This project provides a RESTful API built with Django to efficiently manage clie
 Features
 
 Client Management: Register, update, and delete clients.
+
 Project Management: Create projects for clients and assign users.
+
 User-Specific Projects: Retrieve projects assigned to the logged-in user.
