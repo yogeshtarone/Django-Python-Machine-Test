@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ shoe.name }}</title>
+</head>
+<body>
+    <h1>{{ shoe.name }}</h1>
+    <p>Brand: {{ shoe.brand }}</p>
+    <p>Size: {{ shoe.size }}</p>
+    <p>Color: {{ shoe.color }}</p>
+    <p>Price: {{ shoe.price }}</p>
+    <a href="{% url 'shoe_update' shoe.pk %}">Edit</a>
+    <a href="{% url 'shoe_list' %}">Back to List</a>
+</body>
+</html>

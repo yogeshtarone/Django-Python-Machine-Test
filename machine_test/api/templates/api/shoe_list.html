@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe List</title>
+</head>
+<body>
+    <h1>Shoe List</h1>
+    <a href="{% url 'shoe_create' %}">Add Shoe</a>
+    <ul>
+        {% for shoe in shoes %}
+            <li>
+                <a href="{% url 'shoe_detail' shoe.pk %}">{{ shoe.name }}</a>
+                - {{ shoe.price }} <br>
+                <a href="{% url 'shoe_update' shoe.pk %}">Edit</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

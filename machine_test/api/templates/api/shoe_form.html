@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add/Edit Shoe</title>
+
+<body>
+<h1>{% if form.instance.pk %}Edit{% else %}Add{% endif %} Shoe</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
